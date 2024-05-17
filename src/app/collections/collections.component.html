@@ -1,0 +1,14 @@
+
+<div>
+    <p>Collections</p>
+    <mat-list>
+        <mat-list-item *ngFor="let item of items">
+            <mat-checkbox
+            (change)="selectionModel.toggle(item)"
+            [checked]="selectionModel.isSelected(item)"
+            ></mat-checkbox>
+            {{item?.title}}
+    
+        </mat-list-item>
+    </mat-list>
+</div>

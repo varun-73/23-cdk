@@ -1,0 +1,6 @@
+<div>
+    <label for="copyClip">Text to be copied</label>
+<textarea name="copy-clip-board" id="copy-clip-board" cols="30" rows="10" [(ngModel)]="value"></textarea>
+
+<button [cdkCopyToClipboard]="value">Copy to clipboard</button>
+</div>

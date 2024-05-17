@@ -1,0 +1,7 @@
+<div>
+    <mat-list cdkDropList (cdkDropListDropped)="drop($event)">
+        <mat-list-item cdkDrag *ngFor="let team of iplTeams">
+            {{team}}
+        </mat-list-item>
+    </mat-list>
+</div>

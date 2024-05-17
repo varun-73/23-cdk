@@ -1,0 +1,13 @@
+<div style="text-align: center; margin-top: 20px;">
+    <ng-template [cdkPortalOutlet]="templatePortal"></ng-template>
+    <button (click)="setTemplateA()">A-button</button>
+    <button (click)="setTemplateB()">B-button</button>
+
+</div>
+
+<ng-template #templateA>
+    <h1>Template A</h1>
+</ng-template>
+<ng-template #templateB>
+    <h1>Template B</h1>
+</ng-template>

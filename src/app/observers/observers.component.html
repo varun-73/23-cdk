@@ -1,0 +1,8 @@
+<p>observers works!</p>
+<div style="text-align: center; margin-top: 50px;">
+    <div class="parent" (cdkObserveContent)="contentChange()">
+        <input type="text" [(ngModel)]="contentText">
+        <p>{{contentText}}</p>
+    </div>
+
+</div>
